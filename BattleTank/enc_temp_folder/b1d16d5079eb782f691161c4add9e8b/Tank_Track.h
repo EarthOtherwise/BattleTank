@@ -18,4 +18,20 @@ public:
 
 	UFUNCTION(BlueprintCallable, Category = "Input")
 		void SetThrottle(float NewThrottle);
+
+	UFUNCTION(BlueprintCallable, Category = "Input")
+		void ThrottleChange (bool PlusOrMinus);
+
+	UFUNCTION(BlueprintCallable, Category = "Throttle")
+		void ApplyThrottle();
+
+	float CurrentSetThrottle = 0.f;
+
+	UPROPERTY(EditDefaultsOnly, Category = "Throttle")
+	float ThrottleIncrement = 0.3f;
+
+	UPROPERTY(EditDefaultsOnly, Category = "Throttle")
+		float TrackMaxDrivingForce = 40000000.f;
+
+	bool UseSetThrottle = false;
 };
