@@ -27,10 +27,9 @@ public:
 	// Called to bind functionality to input
 	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
 
-	UFUNCTION(BlueprintCallable, Category = "Initializing")
+
 	void SetBarrelReference(UTankBarrel* BarrelToSet);
 
-	UFUNCTION(BlueprintCallable, Category = "Initializing")
 	void SetTurretReference(UTank_Turret* TurretToSet);
 
 	void AimAt(FVector HitLocation);

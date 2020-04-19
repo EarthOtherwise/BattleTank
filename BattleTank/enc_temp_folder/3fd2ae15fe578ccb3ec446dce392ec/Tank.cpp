@@ -6,7 +6,6 @@
 #include "BattleTank/Public/Tank_Nav_Move_Comp.h"
 #include "BattleTank/Public/TankBarrel.h"
 #include "BattleTank/Public/Tank_Turret.h"
-#include "BattleTank/Public/Tank_Track.h"
 
 // Sets default values
 ATank::ATank()
